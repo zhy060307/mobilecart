@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MobileCart</string>
+    <string name="mall">商城</string>
+    <string name="me">我</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="add_discount">添加折扣</string>
+    <string name="add_privilege">添加优惠券</string>
+
+</resources>

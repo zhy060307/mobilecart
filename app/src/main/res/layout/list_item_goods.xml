@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+
+>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:paddingBottom="10dp"
+                  android:paddingLeft="30dp"
+                  android:paddingRight="10dp"
+                  android:paddingTop="10dp"
+    >
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ipad"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="14sp"
+        />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="$2399.00"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="14sp"
+        />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_add_goods"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/selector_add_goods"
+        android:visibility="visible"
+    />
+
+
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center_vertical"
+                  android:text="×"
+                  android:textColor="@color/toolbar_title_color"
+                  android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+        />
+    </LinearLayout>
+</LinearLayout>
