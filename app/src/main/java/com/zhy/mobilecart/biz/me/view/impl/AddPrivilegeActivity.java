@@ -41,8 +41,6 @@ public class AddPrivilegeActivity extends BaseActivity implements IPrivilegeView
     TextView dateTextView;
 
 
-
-
     private Calendar calendar = Calendar.getInstance();
 
     private PrivilegePresenter discountPresenter;
@@ -85,8 +83,8 @@ public class AddPrivilegeActivity extends BaseActivity implements IPrivilegeView
     @OnClick(R.id.rl_add_ok)
     public void onOk(View view) {
         if (!TextUtils.isEmpty(dateTextView.getText().toString())
-                &&!TextUtils.isEmpty(consumeAmountEt.getText().toString())
-                &&!TextUtils.isEmpty(creditAmountEt.getText().toString())) {
+                && !TextUtils.isEmpty(consumeAmountEt.getText().toString())
+                && !TextUtils.isEmpty(creditAmountEt.getText().toString())) {
 
             Privileges privileges = new Privileges();
             privileges.setConsumeAmount(Double.parseDouble(consumeAmountEt.getText().toString()));
